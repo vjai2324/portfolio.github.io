@@ -90,13 +90,11 @@ a:hover {
 /*------------------------ [2.Homepage CSS] ------------------------*/
 
 .porta-home-image {
-	background-image: url('../images/user_img2.jpeg');
+    background-image: url('../images/user_img2.jpeg');
     border: 3px solid rgb(255, 255, 255) !important;
     width: 40vh;
     height: 50vh;
-    background-size: cover;
-      
-    
+    background-size: cover;    
     top: 25%;
     left: 10%;
     right: 0;
@@ -104,8 +102,7 @@ a:hover {
     margin-right:50px ;
     
 
-    /* border-radius:3px ; 
-    box-shadow: 10px 10px 10px 0px rgb(127, 126, 126); */
+    
 }
 .porta-header {
 	border-bottom: 2px solid #000000;
