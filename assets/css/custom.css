@@ -1,0 +1,2426 @@
+﻿
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body{
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	color: #000000;
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  display: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a:focus, a {
+  outline: none;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+a:hover {
+    color: #000000;
+} 
+.ex-sm-font {
+	font-size: 14px;
+	line-height: 18px;
+}
+.sm-font {
+	font-size: 16px;
+	line-height: 20px;
+}
+.sm-font-two {
+	font-size: 16px;
+	line-height: 24px;
+}
+.sm-md-font {
+	font-size: 18px;
+	line-height: 22px;
+}
+.sm-md-font-two {
+	font-size: 18px;
+	line-height: 30px;
+}
+.md-font-one {
+	font-size: 20px;
+	line-height: 24px;
+}
+.lg-font {
+	font-size: 64px;
+	line-height: 78px;
+}
+.md-font {
+	font-size: 48px;
+	line-height: 60px;
+}
+.w-text {
+	color: #ffffff;
+}
+.b-text {
+	color: #000000;
+}
+.second-color {
+	color: #595959;
+}
+.inter-font-900 {
+	font-weight: 900;
+}
+.inter-font-500 {
+	font-weight: 500;
+}
+.inter-font-600 {
+	font-weight: 600;
+}
+.inter-font-400 {
+	font-weight: 400;
+}
+.inter-font-700 {
+	font-weight: 700;
+}
+
+
+/*------------------------ [2.Homepage CSS] ------------------------*/
+
+.porta-home-image {
+	background-image: url('/assets/images/user_img2.jpeg');
+    border: 3px solid rgb(255, 255, 255) !important;
+    width: 40vh;
+    height: 50vh;
+    background-size: cover;
+      
+    
+    top: 25%;
+    left: 10%;
+    right: 0;
+    position: fixed;
+    margin-right:50px ;
+    
+
+    /* border-radius:3px ; */
+    box-shadow: 10px 10px 10px 0px rgb(127, 126, 126);
+}
+.porta-header {
+	border-bottom: 2px solid #000000;
+}
+.porta-logo img {
+	width: auto;
+	height: 40px;
+}
+.porta-header {
+    padding: 20px 15px 20px 30px;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 4;
+}
+.port-home-title .letter {
+  display: inline-block;
+}
+.porta-header.sticky {
+    background-color: #202020;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    animation: on-scroll 0.7s;
+    -webkit-animation: on-scroll 0.7s;
+    -moz-animation: on-scroll 0.7s;
+    -ms-animation: on-scroll 0.7s;
+    -o-animation: on-scroll 0.7s;
+    width: 50%;
+    margin-left: auto;
+}
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.porta-header-nav input {
+    position: fixed;
+    opacity: 0;
+}
+.porta-header-nav label {
+	position: absolute;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.porta-header-nav label:before {
+	position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    content: "";
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.porta-header-nav label .port-burger {
+    position: fixed;
+    top: 25px;
+    left: auto;
+    right: 15px;
+    z-index: 3;
+    width: 40px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.porta-header-nav label .port-burger::before {
+	top: 0;
+    transform-origin: top left;
+}
+.porta-header-nav label .port-burger::before,
+.porta-header-nav label .port-burger .bar,
+.porta-header-nav label .port-burger::after {
+	position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 12%;
+    background: #0d0c0c;
+    content: "";
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1)
+}
+.porta-header-nav label .port-burger::after {
+    bottom: 0;
+    transform-origin: bottom left;
+}
+.porta-header-nav label .port-burger::before,
+.porta-header-nav label .port-burger .bar,
+.porta-header-nav label .port-burger::after {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 12%;
+    background: #0d0c0c;
+    content: "";
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.porta-header-nav label .port-burger .bar{
+	top: 40%;
+}
+.porta-header-nav label .port-burger::before,
+.porta-header-nav label .port-burger .bar,
+.porta-header-nav label .port-burger::after {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #0d0c0c;
+    content: "";
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.porta-header-nav label .port-burger::after {
+  top: 26px;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.sal-menu-list {
+	position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translate3d(0, 0, 0);
+    transform: translateX(200%);
+    will-change: transform;
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    height: 100vh;
+    width: auto;
+    padding: 0;
+    list-style-type: none;
+    min-width: 438px;
+    align-items: center;
+}
+.port-menu-design-two {
+    position: fixed;
+    background: #fff;
+    z-index: 1;
+    top: 0;
+    left: auto;
+    max-width: 400px;
+    padding: 75px 0 50px;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+    transition: all 0.6s ease-in-out;
+}
+.port-mob-copyright .port-copyright-content {
+    display: none;
+}
+.port-copyright-content a:hover, .port-copyright-content a:focus{
+    color: #ffffff;
+}
+.light-copyright a:hover, .light-copyright a:focus{
+    color: #000000;
+}
+.sal-menu-list::before {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 25em;
+    background: #ffffff;
+    content: "";
+    transform: skewX(15deg) translateX(50%);
+    transform-origin: bottom left;
+    will-change: transform;
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1)
+}
+.port-menu-design-two {
+    display: none;
+}
+[class=navcheck]:checked ~ .sal-menu-list::before {
+    transform: skewX(15deg) translateX(0);
+}
+.sal-menu-list li {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transform: translateX(-100%);
+    transition: color 0.15s, transform 0.5s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.sal-menu-list li:nth-child(1) {
+    transition-delay: 0s, 100ms;
+}
+[class=navcheck]:checked + label::before {
+	opacity: 1;
+    pointer-events: auto;
+    transition-delay: 0s, 250ms;
+    width: 100%;
+    left: auto;
+    right: 0;
+}
+.porta-left-fixed-image {
+    /* z-index: 17; */
+}
+[class=navcheck]:checked + label .port-burger::before {
+    transform: rotate(45deg) translateY(-50%);
+}
+[class=navcheck]:checked + label .port-burger::before, [class=navcheck]:checked + label .port-burger::after {
+	width: 96.42%;
+}
+[class=navcheck]:checked + label .port-burger .bar {
+	transform: scale(0.1);
+}
+[class=navcheck]:checked + label .port-burger::after {
+    transform: rotate(-45deg) translateY(50%);
+}
+[class=navcheck]:checked ~ .sal-menu-list {
+    transform: translateX(0);
+}
+[class=navcheck]:checked ~ .sal-menu-list::before {
+	transform: skewX(-30deg) translateX(-42%);
+    width: 64rem;
+}
+[class=navcheck]:checked ~ .sal-menu-list li {
+	transform: translateX(0);
+}
+.sal-menu-list li:nth-child(1) {
+    transition-delay: 0s, 100ms;
+} 
+.sal-menu-list li:nth-child(2) {
+    transition-delay: 0s, 150ms;
+}
+.sal-menu-list li:nth-child(3) {
+    transition-delay: 0s, 200ms;
+}
+.sal-menu-list li:nth-child(4) {
+    transition-delay: 0s, 250ms;
+}
+.sal-menu-list li:nth-child(5) {
+    transition-delay: 0s, 300ms;
+}
+.sal-menu-list li:nth-child(6) {
+    transition-delay: 0s, 350ms;
+}
+.sal-menu-list li a {
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 58px;
+    color: #909090;
+}
+.port-menu-link.active {
+    color: #000000;
+}
+.port-menu-item {
+	margin: 30px 0;
+}
+.porta-home-wrap {
+	display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.home-content-row {
+	min-height: 100vh;
+}
+.porta-home-content {
+	position: relative;
+}
+.porta-home-main-content {
+	padding: 30px 300px 30px 30px;
+}
+.port-get-touch {
+    background: #000000;
+    text-transform: uppercase;
+    padding: 18px 30px;
+    border-radius: 0;
+    margin-right: 30px;
+}
+.port-cv-download {
+	text-transform: uppercase;
+    padding: 17px 30px;
+    border: 2px solid #000000;
+    border-radius: 0;
+    display: inline-flex;
+    align-items: center;
+}
+.port-sec-menu-link {
+    position: relative;
+}
+.port-menu-item .port-menu-link:after, .port-sec-menu-link a:after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #000000;
+    transform: scaleX(0); 
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.sal-menu-list .port-menu-item:hover a {
+    color: #000000;
+}
+.port-menu-item .port-menu-link.active:after {
+    transform: scaleX(1); 
+}
+.port-menu-item .port-menu-link:hover::after,  .port-sec-menu-link a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.porta-about-wrap.border-none:before, .porta-home-wrap.border-none:before,
+.port-drak-conatct-wrap .porta-about-wrap.border-none:before,
+.porta-home-content.dark-projects-port-cont .porta-about-wrap.border-none:before {
+    border-right: none;
+}
+
+
+/* Common button styles */
+.port-home-buttons {
+    display: inline-flex;
+}
+.port-home-get-touch {
+    margin-right: 30px;
+}
+.port-home-get-touch {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 0;
+   background: #000;
+   overflow: hidden;
+   border: none;
+}
+.port-home-get-touch:after {
+ content: " ";
+ width: 0%;
+ top: 0;
+ height: 100%;
+ background: #e5e5e5;
+ position: absolute;
+ transition: all 0.4s ease-in-out;
+ right: 0;
+}
+.port-home-get-touch:hover::after {
+ right: auto;
+ left: 0;
+ width: 100%;
+ top: 0;
+}
+.port-home-get-touch .port-get-text {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 20px 34px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 1px;
+    z-index: 3;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: block;
+}
+.port-home-get-touch:hover .port-get-text {
+   color: #000000;
+   animation: scaleUp 0.3s ease-in-out;
+}
+@keyframes scaleUp {
+   0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(0.95);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+.port-down-cv-btn {
+    --color: #000;
+    background-color: transparent;
+    border: 2px solid #000;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19px;
+    text-transform: uppercase;
+    padding: 20px 30px 20px 20px;
+    border-radius: 0;
+}
+.port-down-cv-btn::after, .port-down-cv-btn::before {
+   content: '';
+   display: block;
+   height: 100%;
+   width: 100%;
+   transform: skew(90deg) translate(-50%, -50%);
+   position: absolute;
+   inset: 50%;
+   left: 25%;
+   z-index: -1;
+   transition: .5s ease-out;
+   background-color: var(--color);
+}
+.port-down-cv-btn::before {
+   top: -50%;
+   left: -25%;
+   transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+.port-down-cv-btn:hover::before {
+   transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+.port-down-cv-btn:hover::after {
+   transform: skew(45deg) translate(-50%, -50%);
+}
+.port-down-cv-btn:hover svg path {
+    fill: #ffffff;
+}
+.port-down-cv-btn:hover {
+   color: #ffffff!important;
+   border: 2px solid #000000;
+   border-color: #000!important;
+   font-weight: 600;
+}
+.port-down-cv-btn:active {
+   filter: brightness(.7);
+   transform: scale(.98);
+}
+.port-get-touch {
+    color: #fff;
+    background: #000000;
+    overflow: hidden;
+}
+.port-get-touch::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin: -15px 0 0 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #e4e4e442;
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transform: scale3d(1, 2, 1);
+    transform: scale3d(1, 2, 1);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.9,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.9,1);
+}
+.port-down-cv-btn svg {
+    margin-right: 20px;
+}
+
+.port-get-touch .button__icon {
+    vertical-align: middle;
+}
+.port-get-touch > span {
+    vertical-align: middle;
+    padding: 0;
+}
+.port-get-touch:hover::before {
+    -webkit-transform: scale3d(9, 9, 1);
+    transform: scale3d(9, 9, 1);
+}
+.port-home-title {
+	position: relative;
+    display: inline-block;
+}
+.port-home-title:after {
+	content: '';
+    position: absolute;
+    background-color: #000;
+    width: 100px;
+    height: 4px;
+    top: auto;
+    left: 0;
+    bottom: -20px;
+}
+.port-home-desc {
+	padding: 44px 0 60px;
+}
+.port-cv-download svg {
+	margin-right: 20px;
+}
+.porta-home-wrap:before, .porta-about-wrap:before {
+    content: '';
+    position: absolute;
+    /* border-right: 2px; */
+    /* height: 100%; */
+    /* border-color: black; */
+    width: 4px;
+    left: auto;
+    right: 72px;
+    border-right: 2px ridge rgba(0, 0, 0);
+    z-index: 7;
+}
+.port-footer-content {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    z-index: 1;
+}
+.port-footer-wrap {
+	display: flex;
+    justify-content: space-between;
+    padding: 20px 110px  20px 30px;
+    border-top: 2px solid #000;
+    align-items: center;
+}
+.port-weekend-btn {
+	display: flex;
+    align-items: center;
+}
+.port-wek-text {
+	margin-right: 10px;
+}
+.porta-switch-btn {
+  position: relative;
+  display: inline-block;
+}
+.porta-switch-btn input {
+	display:none;
+}
+.porta-round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+  background: #E5E5E5;
+  border: 2px solid #000000;
+  box-shadow: inset 0px 0px 5px #000000;
+  border-radius: 20px;
+}
+.porta-round:before {
+	position: absolute;
+	content: "";
+	height: 30px;
+	width: 30px;
+	left: 3px;
+    bottom: 3px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+input:checked + .porta-round {
+  background-color: #000000;
+}
+input:focus + .porta-round {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .porta-round:before {
+  -webkit-transform: translateX(55px);
+  -ms-transform: translateX(55px);
+  transform: translateX(55px);
+  left: 9px;
+  top: 2px;
+  width: 32px;
+  height: 32px;
+}
+.porta-on {
+  display: none;
+}
+.porta-on, .porta-off {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 68%;
+}
+input:checked+ .porta-round .porta-on {
+	display: block;
+	color: #ffffff;
+	left: 27%;
+}
+input:checked + .porta-round .porta-off {
+	display: none;
+}
+.porta-round.round {
+  border-radius: 34px;
+}
+.porta-round.round:before {
+  border-radius: 50%;
+}
+.port-social-list {
+	padding: 0;
+    list-style: none;
+    margin: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.port-social-content {
+	position: absolute;
+    top: 30%;
+    left: auto;
+    right: 16px;
+    bottom: auto;
+}
+.port-follow-us-content {
+	transform: rotate(-90deg);
+    transform-origin: 72px 10px;
+    position: absolute;
+    text-transform: uppercase;
+    width: 90px;
+    top: auto;
+    bottom: -80px;
+    left: auto;
+    right: 0;
+}
+.port-social-list:after {
+	content: '';
+    position: absolute;
+    border-right: 2px solid #909090;
+    width: 2px;
+    height: 50px;
+    top: auto;
+    bottom: -45px;
+}
+.port-social-list .port-social-icon {
+    background: #E5E5E5;
+    padding: 4px;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: all .6s ease;   
+}
+.port-social-content ul .port-social-icon:hover {
+    border-radius: 0%;
+    background: #000000;
+} 
+ul .port-social-icon:hover a svg path{
+    fill: #ffffff;
+}
+.port-tablet-view-soci {
+    display: none;
+}
+.port-home-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    left: 0;
+}
+.port-home-header .container {
+    margin: 0;
+}
+.port-btn-border-dark {
+    transition: 0.75s ease;
+    position: relative;
+    width: 220px;
+    height: 67px;
+    background: none;
+    border: 2px solid #000000;
+    margin: 0 auto;
+    padding: 20px 24px;
+    float: left;
+}
+.port-btn-border-dark:before {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: #E5E5E5;
+    top: -1px;
+    left: -2px;
+    transition: 0.15s width ease 0.45s;
+    -web-kit-transition: 0.15s width ease 0.45s;
+} 
+.port-btn-border-dark-inner:before {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: #E5E5E5;
+    bottom: -3px;
+    left: -2px;
+    transition: 0.15s height ease 0s;
+    -web-kit-transition: 0.15s height ease 0s;
+}
+.port-btn-border-dark-inner:after {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: #E5E5E5;
+    bottom: -2px;
+    right: -2px;
+    transition: 0.15s width ease 0.15s;
+    -web-kit-transition: 0.15s width ease 0.15s;
+}
+.port-btn-border-dark:after {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: #E5E5E5;
+    top: -1px;
+    right: -2px;
+    transition: 0.15s height ease 0.3s;
+    -web-kit-transition: 0.15s height ease 0.3s;
+}
+.port-btn-border-dark:hover {
+    border-color: transparent;
+    background: none;
+}
+.port-btn-border-dark:hover:before {
+    width: 220px;
+    transition: 0.15s width ease 0s;
+    -web-kit-transition: 0.15s width ease 0s;
+}
+.port-btn-border-dark:hover .port-btn-border-dark-inner:before {
+    height: 67px;
+    transition: 0.15s height ease 0.45s;
+    -web-kit-transition: 0.15s height ease 0.45s;
+}
+.port-btn-border-dark:hover .port-btn-border-dark-inner:after {
+    width: 220px;
+    transition: 0.15s width ease 0.3s;
+    -web-kit-transition: 0.15s width ease 0.3s;
+    bottom: -3px;
+    right: -2px;
+}
+.port-btn-border-dark:hover:after {
+    height: 67px;
+    transition: 0.15s height ease 0.15s;
+    -web-kit-transition: 0.15s height ease 0.15s;
+}
+.port-btn-border-dark-inner a {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.port-btn-border-dark-inner a svg {
+    margin-right: 20px;
+}
+.porta-home-main-content.hidepage, .weekend-mode-hide.hidepage {
+    visibility: hidden;
+}
+
+/*------------------------ [3.About Me CSS] ------------------------*/
+
+.porta-about-wrap {
+	justify-content: flex-start;
+}
+.porta-about-content, .porta-projects-content, .porta-contact-us-content,
+.porta-weekend-mode, .porta-single-projects-content, .porta-project-content  {
+	height: auto;
+    width: 100%;
+    clear: both;
+    float: left;
+    max-width: 1046px;
+    padding: 60px 30px 20px;
+    position: absolute;
+    top: 8%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    transition: visibility 1s linear,opacity 0s linear;
+    -moz-transition: visibility 1s linear,opacity 0s linear;
+    -webkit-transition: visibility1s linear,opacity 0s linear;
+    -o-transition: visibility 1s linear,opacity 0s linear;
+}
+.port-about-desc {
+	padding: 45px 0px 0 0;
+    max-width: 990px;
+}
+.port-about-personal {
+	padding: 60px 0 30px;
+}
+.port-about-personla-title {
+	text-transform: uppercase;
+	position: relative;
+    display: flex;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 0 20px 0;
+    letter-spacing: 0.1em;
+}
+.port-about-personal{
+    width: 100%;
+    margin: 0 auto;
+}
+.port-about-personla-title:after{
+    content: "";
+    display: table-cell;
+    width: 100%;
+    background: linear-gradient(#ffff 50%, currentColor 18%, currentColor calc(50% + 1px), #ffffff calc(50% + 2px));
+    border-left: 2px solid #000;
+    margin-left: 20px;
+}
+.about-social-wrap .port-social-content {
+    position: absolute;
+    top: 30%;
+    left: auto;
+    right: -7px;
+    bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-social-wrap .port-follow-us-content {
+    position: relative;
+    transform-origin: 89px 55px;
+}
+.about-social-wrap .port-social-list:after  {
+    bottom: -28px
+}
+
+/*------------------------ [4.About Personal Information CSS] ------------------------*/
+/*------------------------ [5.About language and progarmming CSS] ------------------------*/
+
+
+.port-about-skills {
+    padding: 30px 0;
+}
+.port-progress-inner .port-back-color {
+    background-color: #808080;
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+    height: 2px;
+}
+.port-progress-inner .port-back-color .bar.open {
+    -webkit-animation: all 2s cubic-bezier(.165,.84,.44,1);
+    -moz-animation: all 2s cubic-bezier(.165,.84,.44,1);
+    animation: all 2s cubic-bezier(.165,.84,.44,1);
+    width: 100%;
+}
+.port-progress-inner .port-back-color .bar {
+    width: 0;
+    height: 100%;
+}
+.port-progress-inner .port-back-color .port-bar-in {
+    height: 6px;
+    background: #0066FF;
+    width: 0;
+    overflow: hidden;
+}
+.port-progress-inner.html-progress .port-back-color .port-bar-in{
+    background: #eeb702;
+}
+/* figma-progress */
+.port-progress-inner.bootstrap-progress .port-back-color .port-bar-in{
+    background: #00FF0A;
+}
+.port-progress-inner.boot-progress .port-back-color .port-bar-in{
+    background: #00FF0A;
+}
+.port-prog-bar-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.port-progra-progressbar {
+    padding: 20px 0 0;
+}
+.port-progress-inner.progress-top {
+    padding-top: 40px;
+}
+.port-progress-inner .port-back-color .port-bar-in.wordpress-bar-in{
+    width: 50%;
+    animation: load-one 3s normal forwards; 
+
+}
+.port-progress-inner .port-back-color .port-bar-in.html-bar-in {
+    width: 80%;
+    animation: load-two 3s normal forwards; 
+}
+.port-progress-inner .port-back-color .port-bar-in.figma-bar-in {
+    width: 90%;
+    animation: load-three 3s normal forwards; 
+}
+@keyframes load-one {
+  0% { width: 0; }
+  100% { width: 50%; }
+}
+@keyframes load-two {
+  0% { width: 0; }
+  100% { width: 80%; }
+}
+@keyframes load-three {
+  0% { width: 0; }
+  100% { width: 90%; }
+}
+
+
+.porta-circle-progress {
+   width: 118px;
+   height: 118px;
+   background: none;
+   margin: 0 auto;
+   box-shadow: none;
+   position: relative;
+   z-index: 0;
+}
+.porta-circle-progress:after {
+   content: "";
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   border: 2px solid #eee;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.porta-circle-progress > span {
+   width: 50%;
+   height: 100%;
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   z-index: 1;
+}
+.porta-circle-progress .progress-left {
+   left: 0;
+}
+.porta-circle-progress .progress-bar {
+   width: 100%;
+   height: 100%;
+   background: none;
+   border-width: 2px;
+   border-style: solid;
+   position: absolute;
+   top: 0;
+   border-color: #0066FF;
+}
+.porta-circle-progress .progress-left .progress-bar {
+   left: 100%;
+   border-top-right-radius: 75px;
+   border-bottom-right-radius: 75px;
+   border-left: 0;
+   -webkit-transform-origin: center left;
+   transform-origin: center left;
+}
+.porta-circle-progress .progress-right {
+   right: 0;
+}
+.porta-circle-progress .progress-right .progress-bar {
+   left: -100%;
+   border-top-left-radius: 75px;
+   border-bottom-left-radius: 75px;
+   border-right: 0;
+   -webkit-transform-origin: center right;
+   transform-origin: center right;
+}
+.porta-circle-progress .progress-value {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.porta-circle-progress .progress-value span {
+   font-size: 12px;
+   text-transform: uppercase;
+}
+.port-circle-prog-value {
+    font-size: 28px;
+    line-height: 34px;
+}
+.port-circle-prog-title {
+    padding: 20px 0 0 0;
+}
+.porta-circle-progress.franch-circle-progress .progress-bar {
+    border-color:#FF0000;
+}
+.porta-circle-progress.arabic-circle-progress .progress-bar {
+    border-color:#00FF0A;
+}
+.port-circle-progress {
+    padding: 40px 0 0;
+}
+.port-circle-progress {
+    background-image: url('images/language/world-map.png');
+    width: 100%;
+    height: 100%;
+    background-position: center center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+/*------------------------ [13.Portfolio CSS] ------------------------*/
+
+.port-portfol-get-btn {
+    margin: 60px 0;
+    padding: 20px 0px;
+    display: inline-block;
+}
+.port-tab-item.all.activ:after {
+    width: 20px;
+}
+.port-tab-item:after {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    width: 0px;
+    height: 2px;
+    top: auto;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+    -o-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+}
+.port-tab-link .port-tab-item:hover{
+    color: #000000;
+}
+.port-tab-item:hover:after, .port-tab-item.activ:after {
+    width: 40px;
+}
+.port-tab-menu {    
+    display: inline-flex;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+.port-tab-link {
+    padding: 0 40px 0 0;
+    text-transform: uppercase;
+    color: #808080;
+    letter-spacing: 0.1em;
+}
+.sm-font.active {
+    color: #000000;
+}
+.port-tab-content {
+    display: none;
+}
+.port-tab-content.activ {
+    display: block;
+}
+.port-tab-item.activ {
+    color: #000;
+}
+.port-tab-item {
+    color: #6c6c6c;
+    position: relative;
+}
+.port-tab-content-box {
+    padding: 50px 0 100px;
+}
+.port-all-title  {
+    font-size: 30px;
+    line-height: 36px;
+    padding: 20px 0 10px;
+}
+.port-all-image img {
+    width: 100%;
+    height: auto;
+    filter: saturate(0);
+}
+.port-all-deatils {
+    text-transform: uppercase;
+    color: #6c6c6c;
+}
+.tab-top {
+    padding-top: 40px;
+}
+.all-content-wrap:hover .port-all-image img {
+    backface-visibility: hidden;
+    transform: scale(1.02);
+    filter: saturate(1);
+}
+.all-content-wrap .port-all-image img {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
+    -moz-transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
+    -webkit-transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
+    -o-transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
+    object-fit:cover;
+    height: 100%;
+    overflow: hidden;
+    height: auto;
+}
+.all-content-wrap, .all-content-wrap .port-all-image {
+    overflow: hidden;
+    cursor: pointer;
+}
+.port-port-get-btn {
+    cursor: pointer;
+}
+.port-port-get-btn:hover a {
+    color: #ffffff;
+}
+
+/*------------------------ [14.Portfolio Detail Page CSS] ------------------------*/
+
+.port-project-detat-row {
+    padding: 40px 0 50px;
+}
+.porta-project-content {
+    display: none;
+}
+.porta-project-content.showpage {
+    display: block;
+}
+.porta-portfolio-content.hidepage {
+    display: none;
+}
+.porta-detail-page .porta-home-image{
+    background-position: bottom center;
+}
+.port-proje-image img {
+    filter: saturate(0);
+    width: 100%;
+    height: auto;
+}
+.port-proje-image:hover img {
+    filter: saturate(1);
+}
+.port-proje-field {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+}
+.port-project-detail-col {
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+}
+.port-proje-field svg{
+    margin-right: 10px;
+}
+.port-project-hold {
+    padding-right: 16px;
+}
+.port-clinet-name {
+    text-transform: uppercase;
+    color: #808080;
+}
+.lpreview-btn {
+    text-transform: uppercase;
+    background: #000;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 20px 30px;
+}
+.port-proje-livepreview {
+    margin-top: 60px;
+}
+.port-proj-image img {
+    left: 0;
+    position: relative;
+    right: 0;
+    object-fit: cover;
+    filter: saturate(0);
+    width: 100%;
+    height: auto;
+}
+.port-proj-image {
+    padding: 0 0 50px 0;
+}
+.port-proj-desc {
+    padding-bottom: 50px;
+}
+.port-about-proje {
+    display: inline-block;
+    padding-bottom: 20px;
+    font-size: 32px;
+    line-height: 36px;
+}
+.project-desc {
+    font-size: 20px;
+    line-height: 30px;
+}
+.project-desc-two {
+    padding-top: 12px;
+}
+.photos { 
+ column-count: 2;
+} 
+.photos img {
+  width: 100%;
+  height: auto;
+  filter: saturate(0);
+  transition: all 0.2s ease-in-out;
+}
+.photos img:hover {
+  filter: saturate(1);
+}
+.port-img-two {
+    padding: 25px 0 0 0;
+}
+.port-detail-gallary{
+    padding: 0 0 50px 0;
+}
+.port-back-btn {
+    margin-bottom: 100px;
+    display: block;
+    text-align: center;
+}
+.port-back-btn .close {
+    padding: 15px 60px;
+    background: #000;
+    color: #fff;
+    border: 3px solid #000;
+    transition: all .3s ease-in;
+}
+.port-back-btn .close:hover {
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+    transition: all .3s ease-in;    
+}
+.port-live-preview {
+    width: auto;
+    height: auto;
+    background: #000;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 18px 32px;
+    text-transform: uppercase;
+}
+.port-live-preview  a {
+    color: #fff;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 600;  
+}
+.port-live-preview:hover a{
+    color: #000;
+}
+.port-live-preview:after {
+    content: "";
+    background: #f5f5f5;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+.port-live-preview:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.port-live-preview a {
+    padding: 0;
+    border: none;
+    color: #ffffff;
+}
+.port-live-preview {
+    margin: 20px 0 0;
+    display: inline-block;
+}
+
+/*------------------------ [15.Portfolio Single Image CSS] ------------------------*/
+
+.porta-image-page, .porta-soundcloud-page,
+.porta-vimeo-content, .porta-youtube-video-page {
+    /* display: none; */
+   
+}
+.porta-image-page.showpage, .porta-soundcloud-page.showpage,
+.porta-vimeo-content.showpage, .porta-youtube-video-page.showpage {
+    /* display: block; */
+ 
+}
+.image-wrapper img {
+    transition: .5s ease;
+    width: 100%;
+    height: auto;
+}
+.porta-single-image {
+    padding: 30px 0 0;
+}
+.port-single-img-btn {
+    margin-bottom: 0px;
+}
+.image-close {
+    position: absolute;
+    top: 30px;
+    left: auto;
+    right: 18px;
+    z-index: 9;
+    background: #fff;
+    border-radius: 100%;
+    padding: 6px;
+    border: 2px solid #000;
+}
+.slider-container {
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+    position: relative;
+    height: 650px;
+    width: auto;
+    justify-content: center;
+    position: relative;
+    top: 51px;
+}
+.slider-container::after {
+    background-color: #000;
+    content: '';
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.15);
+    transition: opacity .6s ease;
+}
+.slide.active {
+    animation: grow 4s linear forwards;
+    opacity: 1;
+}
+@keyframes grow {
+    0%, 20% {
+        transform: scale(1);
+    }
+    
+    75%, 100% {
+        transform: scale(1.15);
+    }
+}
+.controls-container {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: none;
+}
+.control {
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 6px;
+    height: 40px;
+    width: 5px;
+    transition: opacity 0.3s, background-color 0.3s, transform 0.3s;
+}
+.control.active, .control:hover {
+    background-color: #fff;
+    opacity: 1;
+    transform: scale(1.2);
+}
+.slide.slide-one {
+    background-image: url('images/slider/slider-image-one.png');
+}
+.slide.slide-two {
+    background-image: url('images/slider/slider-image-two.png');
+}
+
+/*------------------------ [19.Blog projects CSS] ------------------------*/
+
+.port-blog-wrap {
+   display: flex;
+   margin: 1rem auto;
+   flex-direction: row;
+   margin-bottom: 44px;
+   background: #fff;
+   line-height: 1.4;
+   font-family: sans-serif;
+   border-radius: 5px;
+   overflow: hidden;
+   z-index: 0;
+   height: 360px;
+   cursor: pointer;
+   border: 2px solid #000000;
+}
+.photo-one {
+    background: url('/assets/images/projects_img/foodtech_H_page.jpeg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+}
+.photo-two {
+    background: url('/assets/images/projects_img/LMS_H_page.jpeg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+}
+.photo-three {
+    background: url('/assets/images/projects_img/startup.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+}
+.photo-four {
+    background: url('images/projects/projects-four.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+}
+.photo-five {
+    background: url('images/projects/projects-five.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+}
+.photo-six {
+    background: url('images/projects/projects-six.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+}
+.photo-seven {
+    background: url('images/projects/projects-seven.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+}
+.photo-eight {
+    background: url('images/projects/projects-eight.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+}
+.photo-nine {
+    background: url('images/projects/projects-nine.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+}
+.photo-ten {
+    background: url('images/projects/projects-ten.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+}
+
+.port-projects-title {
+    font-size: 30px;
+    line-height: 45px;
+    background-image: linear-gradient(transparent calc(62% - -11px), #000000 5px);
+    background-size: 0;
+    background-repeat: no-repeat;
+    display: inline;
+    transition: 0.5s ease;
+}
+.port-blog-wrap:hover .port-projects-title {
+    background-size: 100%;
+}
+.port-projects-desc {
+    color: #595959;
+}
+.port-blog-card .port-projects-meta {
+ flex-basis: 40%;
+ height: auto;
+}
+.port-blog-card .port-projects-description {
+ flex-basis: 60%;
+}
+.port-blog-card .port-projects-description:before {
+ transform: skewX(-3deg);
+ content: "";
+ background: #fff;
+ width: 30px;
+ position: absolute;
+ left: -10px;
+ top: 0;
+ bottom: 0;
+ z-index: -1;
+}
+.port-blog-card.alt .port-blog-wrap {
+ flex-direction: row-reverse;
+}
+.port-blog-card.alt .port-projects-description:before {
+ left: inherit;
+ right: -10px;
+ transform: skew(3deg);
+}
+.port-blog-card.alt .port-projects-details {
+ padding-left: 25px;
+}
+.port-blog-card a {
+    color: inherit;
+}
+.port-blog-card a:hover {
+    color: #000000;
+}
+.port-blog-card:hover .port-projects-photo {
+    transform: scale(1.3) rotate(3deg);
+    filter: saturate(1);
+}
+.port-blog-card .port-projects-meta {
+    position: relative;
+    z-index: 0;
+    height: auto;
+}
+.port-blog-card .port-projects-photo {
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background-size: cover;
+ background-position: center;
+ transition: transform 0.2s;
+}
+.port-blog-card .port-projects-details, .blog-card .port-projects-details ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+.port-blog-card .port-projects-details {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: -100%;
+ margin: auto;
+ transition: left 0.2s;
+ background: rgba(0, 0, 0, .6);
+ color: #fff;
+ padding: 10px;
+ width: 100%;
+}
+.p-blog-list {
+    padding: 40px 0;
+}
+.port-blog-card .port-projects-description {
+ padding: 1rem;
+ background: #fff;
+ position: relative;
+ z-index: 1;
+}
+.port-blog-card .port-projects-description .port-read-more {
+    text-align: right;
+    bottom: -6px;
+    position: relative;
+}
+.port-blog-card .port-projects-description .port-read-more a {
+    display: inline-block;
+    position: relative;
+    background: #000;
+    color: #fff;
+    padding: 20px 40px 20px 30px;
+}
+.port-blog-card .port-projects-description .port-read-more a:hover:after {
+ margin-left: 5px;
+ opacity: 1;
+}
+.port-blog-card .port-projects-desc {
+    position: relative;
+    padding: 20px 0 20px;
+}
+.port-blog-card:hover .port-projects-details {
+    left: 0%;
+}
+.port-load-projects {
+    margin: 60px 0;
+    position: relative;
+    text-align: center;
+} 
+.hide-projects {
+    display: none;
+}
+.port-load-projects .sal-load-more{
+    background: transparent;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    vertical-align: middle;
+    flex-basis: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    text-transform: uppercase;
+}
+.port-load-projects .sal-load-more:after {
+    border: 2px dashed #000;
+    position: absolute;
+    content: '';
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+.port-load-projects .sal-load-more:hover:after {
+ -webkit-animation: spinAround 15s linear infinite;
+ -moz-animation: spinAround 15s linear infinite;
+ animation: spinAround 15s linear infinite; 
+ border: 2px dashed #808080;
+}
+.port-load-projects .sal-load-more:hover {
+    color: #595959;
+}
+.port-read-more a:after{
+    content: '»';
+    position: absolute;
+    right: 0;
+    transition: 0.5s;
+    font-size: 28px;
+    top: 13px;
+    opacity: 0;
+}
+.port-read-more a:hover:after {
+    opacity: 1;
+    right: 16px;
+}
+
+/*------------------------ [22.Single projects Blog Page CSS] ------------------------*/
+
+.blog-category {
+    padding: 55px 0 10px;
+}
+.porta-single-projects-content {
+    visibility: hidden;
+}
+.porta-single-projects-content.showpage {
+    visibility: visible;
+}
+.blog-title {
+    font-size: 34px;
+    line-height: 46px;
+}
+.blog-author-by {
+    font-size: 18px;
+    line-height: 30px;
+}
+.porta-post-author {
+    padding: 20px 0;
+}
+.porta-blog-image {
+    padding: 20px 0;
+}
+.blog-descri, .blog-descri-two {
+    padding: 20px 0;
+}
+.blog-descri-two, .blog-descri {
+    color: #595959;
+}
+.blog-quote {
+    border-left: 4px solid #000000;
+    padding: 0 0 0 12px;
+    margin: 20px 0 20px;
+}
+.nav-blog-tag {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+.nav-tag-item {
+    display: inline-block;
+}
+.blog-tag {
+    padding: 20px 0 20px;
+}
+.nav-tag-item {
+    display: inline-block;
+}
+.blog-tag {
+    display: flex;
+    align-items: center;
+}
+.porta-blog-image img{
+    width: 100%;
+    height: auto;
+    filter: saturate(0);
+}
+.nav-social-item-text div {
+    font-size: 22px;
+    line-height: 30px;
+    padding-right: 20px;
+}
+.nav-blog-tag .nav-tag-item {
+    font-size: 18px;
+    line-height: 22px;
+    background: #e5e5e5;
+    padding: 10px 12px;
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+}
+.blog-main-title {
+    font-size: 46px;
+    line-height: 56px;
+}
+.card-body .row {
+    display: flex;
+    align-items: flex-start;
+}
+.comment-user-img {
+    text-align: center;
+}
+.comment-user-img  img {
+    height: 100px;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 100%;
+    filter: saturate(0);
+}
+.porta-post-author img {
+    filter: saturate(0);
+}
+.port-comme-time {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding: 5px 50px 0;
+    color: #6c6c6c !important;
+}
+.port-comm-user-name {
+    padding: 0 0 12px 0;
+}
+.port-comm-desc {
+    padding: 0 0 14px 0;
+}
+.port-comme-user-name {
+    padding: 0 0 10px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;   
+}
+.port-comme-button a {
+    padding: 6px 18px;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    transition: all .3s ease;
+}
+.port-comme-button a:hover{
+    background: #000000!important;
+    color: #ffffff!important;
+}
+.card-body-one, .card-body-three {
+    padding: 20px 0!important;
+}
+.port-comm-box {
+    border: none;
+    padding: 0 0 20px 0;
+}
+.reply-card-body {
+    margin: 10px 0px 10px 104px;
+}
+.port-comm-desc {
+    font-size: 18px;
+    line-height: 26px;
+    color: #6c6c6c;
+}
+.blog-comment-title {
+    padding: 0 0 10px 0;
+}
+.blog-leave-title, .blog-comment-title {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 600;
+}   
+#contact-form {
+    padding: 20px 0;
+}
+.save-email-label label{
+    font-size: 16px;
+    line-height: 20px;
+}
+.blog-comment-section {
+    padding: 20px 0 0;
+}
+.blog-form .form-control{
+    border: none;
+    border-bottom: 2px solid #E5E5E5;
+    border-radius: 0;
+    padding: 0 0 20px 0;
+    text-transform: uppercase;
+}
+.blog-form .port-input-bar-line {
+    width: 140px;
+    top: -1px;
+    position: relative;
+}
+.blog-form textarea {
+    padding: 0;
+}
+.blog-leave-comment {
+    padding: 0 0 30px 0;
+}
+.blog-submit-btn {
+    background: #000;
+    padding: 16px 30px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.msg-submit-btn {
+    margin-top: 22px;
+    border: none;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+}
+.msg-submit-btn:hover {
+    background: #374151;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.blog-back-btn {
+    padding: 0 0 85px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.blog-btn {
+    line-height: 24px;
+    padding: 18px 30px;
+    background: #000;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    border: 2px solid #000;
+    transform: all .3s ease-in;
+}
+.blog-btn:hover {
+    background: #ffffff;
+    color: #000;
+    border: 2px solid #000;
+    transform: all .3s ease-in;
+}
+.porta-page-wrap-light #contact-form input, .porta-page-wrap-light #contact-form textarea{
+    color: #6c6c6c;
+}
+.porta-page-wrap-light #contact-form input::placeholder, .porta-page-wrap-light #contact-form textarea::placeholder{
+    color: #6c6c6c;
+}
+/*------------------------ [23.Cursor CSS] ------------------------*/
+/*improtant -------------------------------------------------------*/
+.cursor {
+   pointer-events: none;
+}
+.cursor__ball {
+   position: fixed;
+   top: 0;
+   left: 0;
+   mix-blend-mode: difference;
+   z-index: 1000;
+}
+.cursor__ball circle {
+   fill: #f7f8fa;
+}
+
+/*------------------------ [25.Dark Mode CSS] ------------------------*/
+
+.dark-porta-home-image{
+    background-image: url('/assets/images/userImg.jpg');
+}
+.port-dark-home-title:after {
+    background-color: #fff;
+}
+.dark-home-content {
+    background: #000;
+}
+.dark-down-btn {
+    color: #fff;
+    border: 2px solid #fff;
+}
+.dark-home-content .porta-home-wrap:before, .dark-home-content .porta-about-wrap:before {
+    border-right: 2px ridge rgba(255, 255, 255);
+}
+.dark-down-btn:hover {
+    color: #000000!important;
+    border: 2px solid #fff;
+    border-color: #fff!important;
+}
+.dark-down-btn::after, .dark-down-btn::before {
+    background: #fff;
+}
+.port-down-cv-btn.dark-down-btn:hover svg path{
+    fill: #000000;
+}
+.dark-home-content .porta-home-wrap.border-none:before {
+    border-right: none;
+}
+
+/*dark menu bar*/
+.porta-header-nav.dark-port-header label .port-burger.dark-port-burger.click::before,
+.porta-header-nav.dark-port-header label .port-burger.dark-port-burger.click::after,
+.porta-header-nav.dark-port-header label .port-burger.dark-port-burger.click .bar{
+    background: #ffffff;
+}
+.porta-header-nav.dark-port-header label .port-burger.dark-port-burger::before,
+.porta-header-nav.dark-port-header label .port-burger.dark-port-burger::after,
+.porta-header-nav.dark-port-header label .port-burger.dark-port-burger .bar{
+    background: #ffffff;
+}
+.port-dark-header {
+    background: #000;
+    border-bottom: 2px solid #fff;
+}
+
+/*social icon menu*/
+.dark-social-list .port-social-icon {
+    background: #303030;
+}
+.port-social-content ul.dark-social-list .port-social-icon:hover {
+    background: #303030;
+}
+
+/*dark footer*/
+.port-dark-footer {
+    background: #000;
+}
+.dark-get-touch {
+    background: #fff;
+}
+.dark-get-touch .port-get-text {
+    color: #000000;
+}
+.port-dark-footer .port-footer-wrap {
+    border-top: 2px solid #ffffff;
+}
+.dark-follow-color {
+    color: #A5A5A5;
+}
+.port-social-list.dark-social-list:after {
+    border-right: 2px solid #707070;
+}
+
+/*dark sidebar menu*/
+
+.dark-port-header .sal-menu-list::before {
+    background: #000;
+}
+.port-menu-link.dark-menu-link {
+    color: #ffffff;
+}
+.port-menu-item  .dark-menu-link:after {
+    background: #fff;
+}
+.dark-sal-menu-list .port-menu-item:hover a {
+    color: #ffffff;
+}
+.dark-sal-menu-list .port-menu-item .port-menu-link:after {
+    background: #ffffff;
+}
+.dark-port-header label:before {
+    background: rgb(255 255 255 / 85%);
+}
+.port-menu-link.dark-color {
+    color: #707070;
+}
+
+
+/*about me page*/
+
+.dark-about-content .port-home-title:after {
+    background-color:#ffffff;
+}
+.dark-sec-color {
+    color: #A5A5A5;
+}
+.dark-about-personal-title:after {
+    background: linear-gradient(#000 50%, currentColor 18%, currentColor calc(50% + 1px), #000 calc(50% + 2px));
+    border-left: 2px solid #fff;
+}
+.port-progress-inner .dark-port-back-color {
+    background-color: #303030;
+}
+.dark-service-card.service-card-wrap {
+    background-color: #000;
+}
+.dark-service-card.service-card-wrap:before {
+    background: rgb(255 255 255);
+}
+.dark-service-card .go-corner {
+    background-color: #fff;
+}
+.dark-service-card:hover .service-icon svg path {
+    fill: #000000;
+}
+.dark-service-card:hover .service-title, .dark-service-card:hover .service-desc {
+    color: #000000;
+}
+.dark-edu-card {
+    background: #000000;
+    border: 2px solid #303030;
+}
+.dark-edu-card .educ-year {
+    background: #303030;
+    color: #ffffff;
+}
+.eduction-card.dark-edu-card:hover:before, .eduction-card.dark-edu-card:hover:after {
+    border-color: #fff;
+}
+.dark-port-inter-icon {
+    border: 2px solid #303030;
+}
+.dark-port-inter-icon:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+}
+.dark-port-inter-icon:hover svg path {
+    fill: #000000;
+}
+.port-award-card .dark-port-award-wrap {
+    background: #000;
+    border: 2px solid #303030;
+}
+.dark-port-award-wrap .awrd-year{
+    background: #303030;
+}
+.port-award-card .dark-port-award-wrap:hover {
+    border-color: #fff;
+    background: #000;
+}
+.port-award-card .dark-card-border {
+    border: 2px dashed #303030;
+}
+.port-about-dark-content.dark-home-content {
+    position: relative;
+    z-index: 1;
+}
+.dark-port-client-wrap {
+    border: 2px solid #303030;
+}
+.dark-port-client-wrap:hover {
+    border: 2px solid #ffffff; 
+}
+.dark-port-client-wrap:hover svg path {
+    fill: #ffffff;
+}
+.dark-testimonial-block .dark-port-inner-box {
+    background-color: #202020;
+}
+.dark-testimonial-block .port-desc-text, .dark-testimonial-block .designation{
+    color: #A5A5A5;
+}
+.dark-testimonial-block .port-info-box .name, .dark-sal-menu-list .port-menu-link.active {
+    color: #ffffff;
+}
+.dark-testimonial-block .port-info-box .port-user-thumb img {
+    border: 6px solid #303030;
+    box-shadow: 0 45px 45px rgb(61 60 60 / 20%);
+}
+.dark-port-testi-carousel .arrow-left {
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='60' height='40' viewBox='0 0 64 64' enable-background='new 0 0 64 64' xml:space='preserve'%3E%3Cg%3E%3Cline fill='none' stroke='%23ffffff' stroke-width='2' stroke-miterlimit='10' x1='64' y1='32' x2='1' y2='32'/%3E%3C/g%3E%3Cpolyline fill='none' stroke='%23ffffff' stroke-width='2' stroke-linejoin='bevel' stroke-miterlimit='10' points='10 23 1 32 10 41 '/%3E%3C/svg%3E");
+}
+.dark-port-testi-carousel .owl-prev:hover, .dark-port-testi-carousel .owl-next:hover { 
+    box-shadow: 7px 15px 20px rgb(187 187 187 / 30%);    
+}
+.dark-port-testi-carousel .owl-theme .owl-nav [class*=owl-]:hover {
+    background: #303030;
+}
+.dark-home-content .porta-about-wrap.border-none:before {
+    border-right: none;
+}
+
+/*Portfolio page*/
+
+.dark-port-portfolio-content, .porta-dark-section {
+    background: #000000;
+}
+.dark-home-get-touch, .dark-port-live-previw {
+    background: #ffffff;
+}
+.dark-home-get-touch .port-get-text {
+    color: #000000;
+}
+.dark-port-tab-link .dark-tab-item.activ, .dark-port-proje-field .port-project-hold {
+    color: #ffffff;
+}
+.dark-tab-item:after {
+    background: #ffffff;
+}
+.dark-port-tab-link .dark-tab-item:hover {
+    color: #ffffff;
+}
+.dark-port-portfolio-content .porta-about-wrap:before {
+    border-right: 2px ridge rgba(255, 255, 255);
+}
+.dark-port-portfolio-content .porta-about-wrap.border-none:before,
+.porta-home-content .porta-about-wrap.border-none:before,
+.dark-home-content .porta-home-wrap.border-none:before,{
+    border-right: none;
+}
+
+/*single project detail page*/
+
+.dark-port-live-previw a {
+    color: #000;
+}
+.dark-port-live-previw:hover a {
+    color: #ffffff;
+}
+.dark-port-live-previw:after {
+    background: #242424;
+}
+.dark-port-back-btn .close {
+    background: #fff;
+    color: #000;
+    border: 3px solid #ffffff;
+}
+.dark-port-back-btn .close:hover {
+    background: #000;
+    color: #fff;
+    border: 3px solid #fff;
+}
+.dark-projects-port-cont .porta-about-wrap:before {
+    /* border-right: 2px ridge rgba(255, 255, 255); */
+}
+.dark-port-blog-card .dark-port-blog-wrap{
+    background: #000;
+    border: 2px solid #fff;
+}
+.dark-port-blog-card .port-projects-description, .dark-port-blog-card .port-projects-description:before {
+    background: #000;
+}
+.dark-port-blog-wrap .port-projects-title, .dark-port-load-projects .sal-load-more  {
+    color: #ffffff;
+}
+.dark-port-blog-wrap .port-projects-desc {  
+    color: #A5A5A5;
+}
+.dark-port-blog-card .port-projects-description .port-read-more a {
+    background: #fff;
+    color: #000;
+}
+.dark-port-blog-card .port-projects-title {
+    background-image: linear-gradient(transparent calc(62% - -11px), #ffffff 5px);
+}
+.dark-port-load-projects .sal-load-more:after {
+    border: 2px dashed #ffffff;
+}
+.dark-port-load-projects .sal-load-more:hover {
+    color: #A5A5A5;
+}
+.dark-port-load-projects .sal-load-more:hover:after {
+    border: 2px dashed #707070;
+}
+
+/*single blog page*/
+
+.dark-blog-release .blog-category, .dark-port-blog-name .blog-title,
+.dark-nav-tag-item .nav-tag-links, .dark-blog-release .text-link:hover,
+.dark-port-blog-content .blog-quote  {
+    color: #ffffff;
+}
+.dark-port-blog-content .blog-descri,.dark-port-blog-content .blog-descri {
+    color: #A5A5A5;
+}
+.dark-port-blog-content .blog-quote {
+    border-left: 4px solid #ffffff;
+}
+.dark-port-blog-content p{
+    color: #A5A5A5;
+}
+.dark-nav-blog-tag .dark-nav-tag-item {
+    background: #303030;
+}
+.dark-sal-comm-box, .dark-blog-form .dark-form-input input,
+.dark-blog-form .dark-form-input textarea {
+    background: transparent;
+}
+.dark-sal-comm-box p.port-comm-desc{
+    color: #969696;
+}
+.dark-port-comm-time {
+    color: #999999 !important;
+}
+.dark-port-comm a {
+    border: 2px solid #fff;
+    color: #fff;
+}
+.dark-form-input .port-input-bar-line {
+    background: #fff;
+}
+.dark-form-input .form-control {
+    border-bottom: 2px solid #303030;
+}
+.dark-form-input input::placeholder, .dark-form-input textarea::placeholder {
+    color: #A5A5A5 !important;
+}
+.dark-form-input input, .dark-form-input textarea {
+    color: #A5A5A5 !important;
+}
+.dark-port-author .text-link:hover {
+    color: #707070;
+}
+.port-dark-comm-user .port-comm-user-name:hover {
+    color: #ffffff;
+}
+.dark-btnContact {
+    background: #fff;
+    color: #000;
+}
+.dark-btnContact:hover {
+    background: #a3a6a9;
+}
+.dark-port-comm .float-right:hover {
+    background: #ffffff!important;
+    color: #000000!important;
+}
+.dark-blog-back .blog-btn {
+    background: #ffff;
+    color: #000;
+    border: 2px solid #fff;
+}
+.dark-blog-back .blog-btn:hover {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+/*conatct me page*/
+
+.port-drak-conatct-wrap .porta-about-wrap:before{
+    border-right: 2px ridge rgba(255, 255, 255);
+}
+.dark-sal-get-wrap {
+    background: #000;
+    border: 2px solid #ffffff;
+}
+.dark-sal-get-wrap:before {
+    background: rgb(255 255 255);    
+}
+.dark-sal-get-wrap .go-corner,.dark-contact-field .port-input-bar-line,
+.dark-port-cont-get-touch{
+    background-color: #fff;
+}
+.dark-sal-get-wrap .port-get-in-title .sal-get-mail{
+    color: #ffffff;
+}
+.dark-sal-get-wrap:hover .port-get-in-title .sal-get-mail, .dark-port-cont-get-touch .port-get-text{
+    color: #000000;
+}
+.dark-sal-get-wrap:hover svg path {
+    fill: #000000;
+}
+.dark-contact-field input, .dark-contact-field textarea{
+    background: transparent;
+}
+.dark-contact-field.port-contact-field input, .dark-contact-field.port-contact-field textarea {
+    border-bottom: 2px solid #303030;
+}
+.dark-contact-field.port-contact-field input::placeholder, .dark-contact-field.port-contact-field textarea::placeholder {
+    color: #A5A5A5;
+}
+
